@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2026-03-03T19:57:53.199913+02:00 by Eclipse SUMO netconvert 1.26.0
+<netconvertConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/netconvertConfiguration.xsd">
+
+    <input>
+        <type-files value="${SUMO_HOME}\data\typemap\osmNetconvert.typ.xml,${SUMO_HOME}\data\typemap\osmNetconvertAerialway.typ.xml"/>
+        <osm-files value="osm_bbox.osm.xml.gz"/>
+    </input>
+
+    <output>
+        <output-file value="osm.net.xml.gz"/>
+        <output.street-names value="true"/>
+        <output.original-names value="true"/>
+        <ptstop-output value="osm_stops.add.xml"/>
+        <ptline-output value="osm_ptlines.xml"/>
+        <ptline-clean-up value="true"/>
+    </output>
+
+    <projection>
+        <proj.utm value="true"/>
+    </projection>
+
+    <processing>
+        <geometry.remove value="true"/>
+    </processing>
+
+    <tls_building>
+        <tls.discard-simple value="true"/>
+        <tls.join value="true"/>
+        <tls.guess-signals value="true"/>
+        <tls.default-type value="actuated"/>
+    </tls_building>
+
+    <ramp_guessing>
+        <ramps.guess value="true"/>
+    </ramp_guessing>
+
+    <junctions>
+        <junctions.join value="true"/>
+    </junctions>
+
+    <railway>
+        <railway.topology.repair value="true"/>
+    </railway>
+
+</netconvertConfiguration>
+-->
+
+<ptLines xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/ptlines_file.xsd">
+    <ptLine id="2182203" name="Автобус № 32 Червоної Калини проспект - Залізничний вокзал" line="32" type="bus" vClass="bus" color="227,189,0" completeness="0.02" missingBefore="44" missingAfter="16">
+        <busStop id="8327159351" name="Поліклініка №5"/>
+    </ptLine>
+    <ptLine id="2182204" name="Автобус № 32 Залізничний вокзал - проспект Червоної Калини" line="32" type="bus" vClass="bus" color="227,189,0" completeness="0.03" missingBefore="14" missingAfter="47">
+        <busStop id="8327140514" name="Мотозавод"/>
+        <busStop id="8327159836" name="Поліклініка №5"/>
+    </ptLine>
+    <ptLine id="2400030" name="Автобус № 13 Суботівська вулиця - Червоної калини вулиця" line="13" type="bus" vClass="bus" color="227,189,0" completeness="0.03" missingBefore="12" missingAfter="57">
+        <busStop id="8327140514" name="Мотозавод"/>
+        <busStop id="8327159836" name="Поліклініка №5"/>
+    </ptLine>
+    <ptLine id="2400031" name="Автобус № 13 Червоної калини вулиця - Суботівська вулиця" line="13" type="bus" vClass="bus" color="227,189,0" completeness="0.01" missingBefore="54" missingAfter="14">
+        <busStop id="8327159351" name="Поліклініка №5"/>
+    </ptLine>
+    <ptLine id="2429815" name="Автобус № 11 Івана Величковського вулиця (Рясне-2) - Червоної калини вулиця" line="11" type="bus" vClass="bus" color="227,189,0" completeness="0.03" missingBefore="32" missingAfter="45">
+        <busStop id="8327140514" name="Мотозавод"/>
+        <busStop id="8327159836" name="Поліклініка №5"/>
+    </ptLine>
+    <ptLine id="2429816" name="Автобус № 11 Червоної калини вулиця - Івана Величковського вулиця (Рясне-2)" line="11" type="bus" vClass="bus" color="227,189,0" completeness="0.01" missingBefore="44" missingAfter="36">
+        <busStop id="8327159351" name="Поліклініка №5"/>
+    </ptLine>
+    <ptLine id="9675818" name="Автобус № 23 Суботівська вулиця - Глиняний тракт вулиця" line="23" type="bus" vClass="bus" color="190,123,91" completeness="0.02" missingBefore="12" missingAfter="81">
+        <busStop id="8327140514" name="Мотозавод"/>
+        <busStop id="8327159836" name="Поліклініка №5"/>
+    </ptLine>
+    <ptLine id="9677082" name="Автобус № 23 Глиняний тракт вулиця - Суботівська вулиця" line="23" type="bus" vClass="bus" color="190,123,91" completeness="0.01" missingBefore="82" missingAfter="14">
+        <busStop id="8327159351" name="Поліклініка №5"/>
+    </ptLine>
+    <ptLine id="9754867" name="Автобус № 18 Глиняний тракт вулиця - Суботівська вулиця" line="18" type="bus" vClass="bus" completeness="0.01" missingBefore="58" missingAfter="14">
+        <busStop id="8327159351" name="Поліклініка №5"/>
+    </ptLine>
+    <ptLine id="9754868" name="Автобус № 18 Суботівська вулиця - Глиняний тракт вулиця" line="18" type="bus" vClass="bus" completeness="0.03" missingBefore="12" missingAfter="53">
+        <busStop id="8327140514" name="Мотозавод"/>
+        <busStop id="8327159836" name="Поліклініка №5"/>
+    </ptLine>
+</ptLines>

@@ -1,0 +1,56 @@
+# ============================================================
+#  Traffic_AI — .gitignore
+# ============================================================
+
+# ------ Python ------
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+*.spec
+
+# ------ Virtual Environment ------
+venv/
+.venv/
+env/
+.env/
+
+# ------ SUMO simulation output (великі XML-файли симуляції) ------
+# dummy.xml — це файл виводу SUMO (детальний трафік), важить 160-230 MB
+dummy.xml
+# Окремі великі .xml виводи (edgeData, tripinfos, vehroutes тощо)
+edgeData.xml
+tripinfos.xml
+vehroutes.xml
+stopinfos.xml
+stats.xml
+
+# ------ Стиснені файли карт OSM (бінарні, можна перегенерувати) ------
+*.gz
+
+# ------ Логи та тимчасові файли SUMO ------
+*.errorlog
+*.log
+*.tmp
+
+# ------ Jupyter / IDE ------
+.ipynb_checkpoints/
+*.ipynb
+.vscode/
+.idea/
+
+# ------ OS ------
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ------ Змінні оточення / секрети ------
+.env
+.env.local
+*.secret

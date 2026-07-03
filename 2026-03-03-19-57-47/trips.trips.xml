@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2026-03-03 19:57:54.044020 by Eclipse SUMO $Id: ptlines2flows.py v1_3_1+0313-ccb31df3eb jakob.erdmann@dlr.de 2019-09-02 13:26:32 +0200 $ v1_26_0+0000-fa7df22d7f1
+<configuration>
+    <net-file value="C:\Users\GAMEMAX\Desktop\univer\Traffic_AI\2026-03-03-19-57-47\osm.net.xml.gz"/>
+    <ptlines-file value="C:\Users\GAMEMAX\Desktop\univer\Traffic_AI\2026-03-03-19-57-47\osm_ptlines.xml"/>
+    <ptstops-file value="C:\Users\GAMEMAX\Desktop\univer\Traffic_AI\2026-03-03-19-57-47\osm_stops.add.xml"/>
+    <output-file value="C:\Users\GAMEMAX\Desktop\univer\Traffic_AI\2026-03-03-19-57-47\osm_pt.rou.xml"/>
+    <stopinfos-file value="C:\Users\GAMEMAX\Desktop\univer\Traffic_AI\2026-03-03-19-57-47\stopinfos.xml"/>
+    <routes-file value="C:\Users\GAMEMAX\Desktop\univer\Traffic_AI\2026-03-03-19-57-47\vehroutes.xml"/>
+    <trips-file value="C:\Users\GAMEMAX\Desktop\univer\Traffic_AI\2026-03-03-19-57-47\trips.trips.xml"/>
+    <min-stops value="0"/>
+    <extend-to-fringe value="True"/>
+    <random-begin value="True"/>
+    <seed value="42"/>
+    <ignore-errors value="True"/>
+    <vtype-prefix value="pt_"/>
+    <verbose value="True"/>
+</configuration>
+-->
+
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
+    <vType id="pt_bus" vClass="bus" speedFactor="0.95"/>
+    <vType id="pt_tram" vClass="tram" speedFactor="1.0"/>
+    <vType id="pt_train" vClass="rail"/>
+    <vType id="pt_subway" vClass="subway"/>
+    <vType id="pt_light_rail" vClass="rail_urban"/>
+    <vType id="pt_monorail" vClass="rail_urban"/>
+    <vType id="pt_trolleybus" vClass="bus" speedFactor="0.95"/>
+    <vType id="pt_minibus" vClass="bus" speedFactor="0.95"/>
+    <vType id="pt_share_taxi" vClass="taxi" speedFactor="0.95"/>
+    <vType id="pt_aerialway" vClass="cable_car" length="2.5" width="2" personCapacity="4"/>
+    <vType id="pt_ferry" vClass="ship"/>
+    <trip id="0_bus_32:0" type="pt_bus" depart="15.0" departLane="best" from="24161624#1" to="24161624#1">
+        <stop busStop="8327159351" duration="30"/>  <!-- Поліклініка №5 -->
+    </trip>
+    <trip id="1_bus_32:1" type="pt_bus" depart="17.0" departLane="best" from="24161624#0" to="24161624#3">
+        <stop busStop="8327140514" duration="30"/>  <!-- Мотозавод -->
+        <stop busStop="8327159836" duration="30"/>  <!-- Поліклініка №5 -->
+    </trip>
+    <trip id="2_bus_13:0" type="pt_bus" depart="52.0" departLane="best" from="24161624#0" to="24161624#3">
+        <stop busStop="8327140514" duration="30"/>  <!-- Мотозавод -->
+        <stop busStop="8327159836" duration="30"/>  <!-- Поліклініка №5 -->
+    </trip>
+    <trip id="3_bus_13:1" type="pt_bus" depart="133.0" departLane="best" from="24161624#1" to="24161624#1">
+        <stop busStop="8327159351" duration="30"/>  <!-- Поліклініка №5 -->
+    </trip>
+    <trip id="4_bus_11:0" type="pt_bus" depart="165.0" departLane="best" from="24161624#0" to="24161624#3">
+        <stop busStop="8327140514" duration="30"/>  <!-- Мотозавод -->
+        <stop busStop="8327159836" duration="30"/>  <!-- Поліклініка №5 -->
+    </trip>
+    <trip id="5_bus_11:1" type="pt_bus" depart="253.0" departLane="best" from="24161624#1" to="24161624#1">
+        <stop busStop="8327159351" duration="30"/>  <!-- Поліклініка №5 -->
+    </trip>
+    <trip id="6_bus_23:0" type="pt_bus" depart="383.0" departLane="best" from="24161624#0" to="24161624#3">
+        <stop busStop="8327140514" duration="30"/>  <!-- Мотозавод -->
+        <stop busStop="8327159836" duration="30"/>  <!-- Поліклініка №5 -->
+    </trip>
+    <trip id="7_bus_23:1" type="pt_bus" depart="406.0" departLane="best" from="24161624#1" to="24161624#1">
+        <stop busStop="8327159351" duration="30"/>  <!-- Поліклініка №5 -->
+    </trip>
+    <trip id="8_bus_18:0" type="pt_bus" depart="441.0" departLane="best" from="24161624#1" to="24161624#1">
+        <stop busStop="8327159351" duration="30"/>  <!-- Поліклініка №5 -->
+    </trip>
+    <trip id="9_bus_18:1" type="pt_bus" depart="535.0" departLane="best" from="24161624#0" to="24161624#3">
+        <stop busStop="8327140514" duration="30"/>  <!-- Мотозавод -->
+        <stop busStop="8327159836" duration="30"/>  <!-- Поліклініка №5 -->
+    </trip>
+</routes>

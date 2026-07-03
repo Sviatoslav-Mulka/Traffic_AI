@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2026-03-03 19:57:54.433451 by Eclipse SUMO osmWebWizard.py v1_26_0+0000-fa7df22d7f1
+<configuration>
+    <net-file value="C:\Users\GAMEMAX\Desktop\univer\Traffic_AI\2026-03-03-19-57-47\osm.net.xml.gz"/>
+    <ptlines-file value="C:\Users\GAMEMAX\Desktop\univer\Traffic_AI\2026-03-03-19-57-47\osm_ptlines.xml"/>
+    <ptstops-file value="C:\Users\GAMEMAX\Desktop\univer\Traffic_AI\2026-03-03-19-57-47\osm_stops.add.xml"/>
+    <output-file value="C:\Users\GAMEMAX\Desktop\univer\Traffic_AI\2026-03-03-19-57-47\osm_pt.rou.xml"/>
+    <stopinfos-file value="C:\Users\GAMEMAX\Desktop\univer\Traffic_AI\2026-03-03-19-57-47\stopinfos.xml"/>
+    <routes-file value="C:\Users\GAMEMAX\Desktop\univer\Traffic_AI\2026-03-03-19-57-47\vehroutes.xml"/>
+    <trips-file value="C:\Users\GAMEMAX\Desktop\univer\Traffic_AI\2026-03-03-19-57-47\trips.trips.xml"/>
+    <min-stops value="0"/>
+    <extend-to-fringe value="True"/>
+    <random-begin value="True"/>
+    <seed value="42"/>
+    <ignore-errors value="True"/>
+    <vtype-prefix value="pt_"/>
+    <verbose value="True"/>
+</configuration>
+-->
+
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
+    <vType id="pt_bus" vClass="bus"/>
+    <vType id="pt_tram" vClass="tram"/>
+    <vType id="pt_train" vClass="rail"/>
+    <vType id="pt_subway" vClass="subway"/>
+    <vType id="pt_light_rail" vClass="rail_urban"/>
+    <vType id="pt_monorail" vClass="rail_urban"/>
+    <vType id="pt_trolleybus" vClass="bus"/>
+    <vType id="pt_minibus" vClass="bus"/>
+    <vType id="pt_share_taxi" vClass="taxi"/>
+    <vType id="pt_aerialway" vClass="cable_car" length="2.5" width="2" personCapacity="4"/>
+    <vType id="pt_ferry" vClass="ship"/>
+    <route id="pt_bus_11:0" color="227,189,0" edges="24161624#0 24161624#1 24161624#3" >
+        <stop busStop="8327140514" duration="20" until="47.0"/> <!-- Мотозавод -->
+        <stop busStop="8327159836" duration="20" until="116.0"/> <!-- Поліклініка №5 -->
+    </route>
+    <route id="pt_bus_11:1" color="227,189,0" edges="24161624#1" >
+        <stop busStop="8327159351" duration="20" until="41.0"/> <!-- Поліклініка №5 -->
+    </route>
+    <route id="pt_bus_13:0" color="227,189,0" edges="24161624#0 24161624#1 24161624#3" >
+        <stop busStop="8327140514" duration="20" until="50.0"/> <!-- Мотозавод -->
+        <stop busStop="8327159836" duration="20" until="132.0"/> <!-- Поліклініка №5 -->
+    </route>
+    <route id="pt_bus_13:1" color="227,189,0" edges="24161624#1" >
+        <stop busStop="8327159351" duration="20" until="47.0"/> <!-- Поліклініка №5 -->
+    </route>
+    <route id="pt_bus_18:0" edges="24161624#1" >
+        <stop busStop="8327159351" duration="20" until="43.0"/> <!-- Поліклініка №5 -->
+    </route>
+    <route id="pt_bus_18:1" edges="24161624#0 24161624#1 24161624#3" >
+        <stop busStop="8327140514" duration="20" until="47.0"/> <!-- Мотозавод -->
+        <stop busStop="8327159836" duration="20" until="123.0"/> <!-- Поліклініка №5 -->
+    </route>
+    <route id="pt_bus_23:0" color="190,123,91" edges="24161624#0 24161624#1 24161624#3" >
+        <stop busStop="8327140514" duration="20" until="47.0"/> <!-- Мотозавод -->
+        <stop busStop="8327159836" duration="20" until="146.0"/> <!-- Поліклініка №5 -->
+    </route>
+    <route id="pt_bus_23:1" color="190,123,91" edges="24161624#1" >
+        <stop busStop="8327159351" duration="20" until="41.0"/> <!-- Поліклініка №5 -->
+    </route>
+    <route id="pt_bus_32:0" color="227,189,0" edges="24161624#1" >
+        <stop busStop="8327159351" duration="20" until="42.0"/> <!-- Поліклініка №5 -->
+    </route>
+    <route id="pt_bus_32:1" color="227,189,0" edges="24161624#0 24161624#1 24161624#3" >
+        <stop busStop="8327140514" duration="20" until="47.0"/> <!-- Мотозавод -->
+        <stop busStop="8327159836" duration="20" until="117.0"/> <!-- Поліклініка №5 -->
+    </route>
+    <flow id="pt_bus_32:0" type="pt_bus" route="pt_bus_32:0" begin="15.0" end="3615.0" period="600" line="32:0" >
+        <param key="name" value="Автобус № 32 Червоної Калини проспект - Залізничний вокзал"/>
+        <param key="completeness" value="0.02"/>
+    </flow>
+    <flow id="pt_bus_32:1" type="pt_bus" route="pt_bus_32:1" begin="17.0" end="3617.0" period="600" line="32:1" >
+        <param key="name" value="Автобус № 32 Залізничний вокзал - проспект Червоної Калини"/>
+        <param key="completeness" value="0.03"/>
+    </flow>
+    <flow id="pt_bus_13:0" type="pt_bus" route="pt_bus_13:0" begin="52.0" end="3652.0" period="600" line="13:0" >
+        <param key="name" value="Автобус № 13 Суботівська вулиця - Червоної калини вулиця"/>
+        <param key="completeness" value="0.03"/>
+    </flow>
+    <flow id="pt_bus_13:1" type="pt_bus" route="pt_bus_13:1" begin="133.0" end="3733.0" period="600" line="13:1" >
+        <param key="name" value="Автобус № 13 Червоної калини вулиця - Суботівська вулиця"/>
+        <param key="completeness" value="0.01"/>
+    </flow>
+    <flow id="pt_bus_11:0" type="pt_bus" route="pt_bus_11:0" begin="165.0" end="3765.0" period="600" line="11:0" >
+        <param key="name" value="Автобус № 11 Івана Величковського вулиця (Рясне-2) - Червоної калини вулиця"/>
+        <param key="completeness" value="0.03"/>
+    </flow>
+    <flow id="pt_bus_11:1" type="pt_bus" route="pt_bus_11:1" begin="253.0" end="3853.0" period="600" line="11:1" >
+        <param key="name" value="Автобус № 11 Червоної калини вулиця - Івана Величковського вулиця (Рясне-2)"/>
+        <param key="completeness" value="0.01"/>
+    </flow>
+    <flow id="pt_bus_23:0" type="pt_bus" route="pt_bus_23:0" begin="383.0" end="3983.0" period="600" line="23:0" >
+        <param key="name" value="Автобус № 23 Суботівська вулиця - Глиняний тракт вулиця"/>
+        <param key="completeness" value="0.02"/>
+    </flow>
+    <flow id="pt_bus_23:1" type="pt_bus" route="pt_bus_23:1" begin="406.0" end="4006.0" period="600" line="23:1" >
+        <param key="name" value="Автобус № 23 Глиняний тракт вулиця - Суботівська вулиця"/>
+        <param key="completeness" value="0.01"/>
+    </flow>
+    <flow id="pt_bus_18:0" type="pt_bus" route="pt_bus_18:0" begin="441.0" end="4041.0" period="600" line="18:0" >
+        <param key="name" value="Автобус № 18 Глиняний тракт вулиця - Суботівська вулиця"/>
+        <param key="completeness" value="0.01"/>
+    </flow>
+    <flow id="pt_bus_18:1" type="pt_bus" route="pt_bus_18:1" begin="535.0" end="4135.0" period="600" line="18:1" >
+        <param key="name" value="Автобус № 18 Суботівська вулиця - Глиняний тракт вулиця"/>
+        <param key="completeness" value="0.03"/>
+    </flow>
+</routes>
